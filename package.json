@@ -1,0 +1,13 @@
+{
+  "name"          : "stackedit-download-proxy",
+  "description"   : "Download proxy for StackEdit.",
+  "url"           : "http://benweet.github.io/stackedit/",
+  "keywords"      : ["stackedit"],
+  "author"        : "Benoit Schweblin",
+  "contributors"  : [],
+  "dependencies"  : ["express", "ssh2"],
+  "engines"       : { "node": "0.10.x" },
+  "lib"           : ".",
+  "main"          : "index",
+  "version"       : "0.1.0"
+}
