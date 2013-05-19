@@ -8,6 +8,10 @@ SSH proxy for StackEdit. Allows StackEdit to upload documents on SSH servers.
 	npm install
 	node server.js
 
+**Change SSH proxy in StackEdit:**
+
+![StackEdit settings][1]
+
 
 Deploy on Heroku
 ----------------
@@ -26,3 +30,6 @@ Deploy on Heroku
 
 
 > Written with [StackEdit](http://benweet.github.io/stackedit/).
+
+
+  [1]: https://raw.github.com/benweet/stackedit-ssh-proxy/master/stackedit-settings.png
