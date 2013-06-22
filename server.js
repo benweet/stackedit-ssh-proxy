@@ -72,7 +72,12 @@ app.post('/upload', function(req, res) {
 					);
 	 
 					// initiate transfer of file
-					writeStream.end(req.body.content);
+					var offset = 0;
+					while(offset < req.body.content.length) {
+						writeStream.write(req.body.content.slice(offset, offset+65536));
+						offset += 65536;
+					}
+					writeStream.end();
 				}
 			);
 		}
