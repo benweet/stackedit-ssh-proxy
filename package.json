@@ -5,7 +5,7 @@
   "keywords"      : ["stackedit"],
   "author"        : "Benoit Schweblin",
   "contributors"  : [],
-  "dependencies"  : ["express", "ssh2"],
+  "dependencies"  : ["express", "body-parser", "ssh2"],
   "engines"       : { "node": "0.10.x" },
   "lib"           : ".",
   "main"          : "index",
