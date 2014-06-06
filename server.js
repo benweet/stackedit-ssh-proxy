@@ -1,6 +1,7 @@
-var ssh2    = require('ssh2'),
-    fs      = require('fs'),
-    express = require('express');
+var ssh2       = require('ssh2'),
+    fs         = require('fs'),
+    express    = require('express'),
+    bodyParser = require('body-parser');
 
 // Load config defaults from JSON file.
 // Environment variables override defaults.
@@ -16,7 +17,7 @@ function loadConfig() {
 
 var config = loadConfig();
 var app = express();
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 // Convenience for allowing CORS on routes - GET only
 app.all('*', function (req, res, next) {
